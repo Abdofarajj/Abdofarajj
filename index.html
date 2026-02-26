@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Abdualrahman Faraj | AI & Frontend Engineer</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Abdualrahman</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="ri-home-5-line"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="ri-trophy-line"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="ri-book-open-line"></i> Qualification
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="ri-briefcase-line"></i> Services
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="ri-image-line"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="ri-chat-3-line"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__buttons">
+                <!-- Theme change button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container">
+                <!-- Hero Content -->
+                <div class="home__content-hero">
+                    <!-- Left Column: Text Content -->
+                    <div class="home__data">
+                        <span class="home__greeting">Hello, I'm</span>
+                        <h1 class="home__title">Abdualrahman Faraj</h1>
+                        <p class="home__subtitle">AI & Software Engineer</p>
+                        <p class="home__description">
+                            Computer Science graduate with Honors specializing in AI Engineering 
+                            and Software Development. Building intelligent, scalable solutions 
+                            for fintech, transportation, and digital platforms.
+                        </p>
+                        
+                        <!-- Call-to-Action Buttons -->
+                        <div class="home__buttons">
+                            <a href="#projects" class="home__button home__button--primary">
+                                <i class="ri-folder-line"></i> View Projects
+                            </a>
+                            <a href="#contact" class="home__button home__button--secondary">
+                                <i class="ri-chat-3-line"></i> Contact Me
+                            </a>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/abdualrahman-faraj-061baa17b/" target="_blank" rel="noopener" class="home__social-link" aria-label="LinkedIn Profile">
+                                <i class="ri-linkedin-box-line"></i>
+                            </a>
+                            <a href="https://github.com/Abdofarajj/Abdofarajj" target="_blank" rel="noopener" class="home__social-link" aria-label="GitHub Profile">
+                                <i class="ri-github-line"></i>
+                            </a>
+                            <a href="mailto:abdualrahman.farag@zaho.ly" class="home__social-link" aria-label="Email">
+                                <i class="ri-mail-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Profile Image -->
+                    <div class="home__image">
+                        <div class="home__image-wrapper">
+                            <img src="assets/img/memoji.png" alt="Abdualrahman Faraj - AI & Frontend Engineer">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Section -->
+                <div class="home__stats">
+                    <div class="home__stats-item">
+                        <span class="home__stats-number">4+</span>
+                        <span class="home__stats-label">Years of Experience</span>
+                    </div>
+                    <div class="home__stats-item">
+                        <span class="home__stats-number">8</span>
+                        <span class="home__stats-label">Completed Projects</span>
+                    </div>
+                    <div class="home__stats-item">
+                        <span class="home__stats-number">3+</span>
+                        <span class="home__stats-label">Companies Worked</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <span class="section__subtitle">Most recent work</span>
+
+            <div class="container section__border">
+                <div class="projects__container swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Project 1 -->
+                        <div class="projects__content swiper-slide">
+                            <img src="assets/img/project1.jpg" alt="Rakeb App" class="projects__img">
+                            <div>
+                                <span class="projects__subtitle">POS App</span>
+                                <h3 class="projects__title">Hawelli E-wallet App</h3>
+                                <a href="https://zaho.ly/hawelli/" target="_blank" rel="noopener" class="projects__button">
+                                    View More <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="projects__content swiper-slide">
+                            <img src="assets/img/project2.jpg" alt="Voucher App" class="projects__img">
+                            <div>
+                                <span class="projects__subtitle">Mobile App</span>
+                                <h3 class="projects__title">Voucher Ecosystem</h3>
+                                <div class="projects__button-placeholder"></div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="projects__content swiper-slide">
+                            <img src="assets/img/project3.png" alt="Hashi Website" class="projects__img">
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h3 class="projects__title">Hashi Company Website</h3>
+                                <a href="https://hashi.ly/" target="_blank" rel="noopener" class="projects__button">
+                                    View More <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Swiper arrows -->
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+
+                    <!-- Swiper pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section">
+            <h2 class="section__title">Testimonial</h2>
+            <span class="section__subtitle">My clients saying</span>
+
+            <div class="container section__border">
+                <div class="testimonial__container swiper">
+                    <div class="swiper-wrapper">
+                         <!-- Testimonial 3 -->
+                        <div class="testimonial__content swiper-slide">
+                            <p class="testimonial__description">
+                                "Abdualrahman demonstrates strong system design skills. 
+                                His problem-solving approach and technical discipline ensure 
+                                reliable and maintainable implementations."
+                            </p>
+                            <div>
+                                <h3 class="testimonial__name">Firas Tantush</h3>
+                                <span class="testimonial__subtitle">Chief Commercial Officer</span>
+                            </div>
+                        </div>
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial__content swiper-slide">
+                            <p class="testimonial__description">
+                                "Abdualrahman brought strong technical depth to our project. 
+                                His ability to translate complex requirements into a scalable, 
+                                high-performance solution made a significant impact on delivery quality."
+                            </p>
+                            <div>
+                                <h3 class="testimonial__name">Yaseen Emhemmed</h3>
+                                <span class="testimonial__subtitle">Project Lead</span>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial__content swiper-slide">
+                            <p class="testimonial__description">
+                                "Working with Abdualrahman was seamless from start to finish. 
+                                He communicates clearly, works efficiently, and consistently 
+                                delivers production-ready solutions with attention to detail."
+                            </p>
+                            <div>
+                                <h3 class="testimonial__name">Mohammed Fathi</h3>
+                                <span class="testimonial__subtitle">Product Owner</span>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+
+                    <!-- Swiper pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technical expertise</span>
+
+            <div class="skills__container container grid section__border">
+                <!-- Skill 1 -->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <!-- <i class="ri-code-s-slash-line"></i> Frontend Developer -->
+                    </h3>
+
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                            </div>
+                            <h3 class="skills__name">Python</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js">
+                            </div>
+                            <h3 class="skills__name">React.js</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                            </div>
+                            <h3 class="skills__name">TypeScript</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js">
+                            </div>
+                            <h3 class="skills__name">Next.js</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+                            </div>
+                            <h3 class="skills__name">TensorFlow</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
+                            </div>
+                            <h3 class="skills__name">PyTorch</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                            </div>
+                            <h3 class="skills__name">HTML5</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                            </div>
+                            <h3 class="skills__name">CSS3 / SCSS</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                            </div>
+                            <h3 class="skills__name">JavaScript</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn">
+                            </div>
+                            <h3 class="skills__name">Scikit-learn</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/figma-1.svg" alt="Figma">
+                            </div>
+                            <h3 class="skills__name">Figma</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+                            </div>
+                            <h3 class="skills__name">Pandas</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="REST APIs">
+                            </div>
+                            <h3 class="skills__name">REST APIs</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+
+                      
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                            </div>
+                            <h3 class="skills__name">Git / GitHub</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">Experience & education</span>
+
+            <div class="qualification__container container grid section__border">
+                <div class="qualification__content">
+                    <h3 class="qualification__title">
+                        <i class="ri-pencil-ruler-2-line"></i> Education
+                    </h3>
+
+                    <div class="qualification__info">
+                        <div class="qualification__data">
+                            <h3 class="qualification__name">Honors Bachelor of Computer Science</h3>
+                            <span class="qualification__country">University of Ottawa - Canada</span>
+                            <span class="qualification__year">2020 - 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="qualification__content">
+                    <h3 class="qualification__title">
+                        <i class="ri-building-line"></i> Work
+                    </h3>
+
+                    <div class="qualification__info">
+                        <div class="qualification__data">
+                            <h3 class="qualification__name">Software Engineer</h3>
+                            <span class="qualification__country">Rakeb | Zaho FinTech</span>
+                            <span class="qualification__country">Hawelli | Zaho FinTech</span>
+
+                            <span class="qualification__year">2025 - 2026</span>
+                        </div>
+
+                        <div class="qualification__data">
+                            <h3 class="qualification__name">Product Manager</h3>
+                            <span class="qualification__country">Pronto - Voucher App</span>
+                            <span class="qualification__country">Pronto - FirstMall App</span>
+
+                            <span class="qualification__year">2025 - Present</span>
+                        </div>
+
+                        <div class="qualification__data">
+                            <h3 class="qualification__name">Web Developer / Contractor</h3>
+                            <span class="qualification__country">Hashi | L2 Telecom</span>
+                            <span class="qualification__year">2025 - 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="assets/img/shape-circle.svg" alt="qualification shape" class="qualification__img">
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle">What I offer</span>
+
+            <div class="services__container container grid section__border">
+                <div class="services__card">
+            <i class="ri-brain"></i>
+            <h2 class="services__title">AI<br>Solutions</h2>
+            <p class="services__description">
+                Custom AI solutions including machine learning models and 
+                natural language processing systems tailored to your business needs.
+            </p>
+         
+        </div>
+
+        <div class="services__card">
+            <i class="ri-smartphone-line"></i> <!-- FIXED -->
+            <h2 class="services__title">Mobile & Web<br>Development</h2>
+            <p class="services__description">
+                Full-stack mobile and web application development 
+                using React Native, TypeScript, and modern frameworks 
+                for scalable, performant solutions.
+            </p>
+            
+        </div>
+
+<div class="services__card">
+    <i class="ri-server-line"></i>
+    <h2 class="services__title">System<br>Architecture</h2>
+    <p class="services__description">
+        Design and implementation of secure, scalable system 
+        architectures for fintech, transportation, and digital 
+        service platforms.
+    </p>
+</div>
+            </div>
+        </section>
+
+        
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid section__border">
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-chat-3-line"></i> Talk to me
+                    </h3>
+
+                    <div class="contact__info">
+                        <div class="contact__data">
+                            <span class="contact__data-title">Email</span>
+                            <span class="contact__data-info">abdofaraj8@gmail.com</span>
+                        </div>
+
+                        <div class="contact__data">
+                            <span class="contact__data-title">WhatsApp</span>
+                            <span class="contact__data-info">+218 93 169 169 7</span>
+                            <a href="https://api.whatsapp.com/send?phone=13435487734&text=Hello, I'd like to discuss a project!" target="_blank" rel="noopener" class="contact__button">
+                                Write me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__data">
+                            <span class="contact__data-title">LinkedIn</span>
+                            <span class="contact__data-info">Abdualrahman Faraj</span>
+                            <a href="https://www.linkedin.com/in/abdualrahman-faraj-061baa17b/" target="_blank" rel="noopener" class="contact__button">
+                                Connect <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-send-plane-line"></i> Write me your project
+                    </h3>
+
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Name</label>
+                            <input type="text" name="user_name" required placeholder="Write your name" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Email</label>
+                            <input type="email" name="user_email" required placeholder="Write your email" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label class="contact__form-tag">Project</label>
+                            <textarea name="user_project" placeholder="Write your project description" class="contact__form-input"></textarea>
+                        </div>
+
+                        <button class="contact__button">
+                            Submit <i class="ri-arrow-right-up-line"></i>
+                        </button>
+
+                        <p class="contact__message" id="contact-message"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Abdualrahman Faraj</h1>
+            <p>AI & Frontend Engineer</p>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#home" class="footer__link">Home</a>
+                </li>
+                <li>
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects" class="footer__link">Projects</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <a href="https://www.linkedin.com/in/abdualrahman-faraj-061baa17b/" target="_blank" rel="noopener" class="footer__social-link">
+                    <i class="ri-linkedin-box-line"></i>
+                </a>
+                <a href="https://github.com/Abdofarajj/Abdofarajj" target="_blank" rel="noopener" class="footer__social-link">
+                    <i class="ri-github-line"></i>
+                </a>
+                <a href="mailto:abdualrahman.farag@zaho.ly" class="footer__social-link">
+                    <i class="ri-mail-line"></i>
+                </a>
+            </ul>
+
+<span class="footer__copy">
+  &#169; <span id="year"></span> Abdualrahman Faraj. All rights reserved
+</span>
+        </div>
+    </footer>
+
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    
+    <!--=============== EMAIL JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
